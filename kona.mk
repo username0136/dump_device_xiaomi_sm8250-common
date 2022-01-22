@@ -399,6 +399,13 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     libqti-perfd-client
 
+# PocketMode
+PRODUCT_PACKAGES += \
+    PocketMode
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/pocket/privapp-permissions-pocketmode.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-pocketmode.xml
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
