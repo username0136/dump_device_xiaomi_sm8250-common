@@ -147,6 +147,9 @@ vendor.qcom.bluetooth.soc=hastings
 vendor.hw.fm.init=0
 persist.vendor.btstack.enable.lpa=true
 
+# Camera
+persist.vendor.camera.perflock.enable=0
+
 # Chipset
 ro.soc.manufacturer=QTI
 ro.soc.model=SM8250
