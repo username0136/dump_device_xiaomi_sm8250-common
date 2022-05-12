@@ -1,6 +1,9 @@
 # Camera
 camera.disable_zsl_mode=true
 
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
+
 # Display
 debug.gralloc.gfx_ubwc_disable=0
 debug.sf.enable_hwc_vds=1
