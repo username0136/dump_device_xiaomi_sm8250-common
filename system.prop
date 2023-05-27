@@ -5,6 +5,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.line
 # CNE
 persist.vendor.cne.feature=1
 
+# Feature flags
+persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # Disable Layer caching
 ro.surface_flinger.enable_layer_caching=false
 
