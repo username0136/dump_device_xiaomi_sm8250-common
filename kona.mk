@@ -485,6 +485,7 @@ PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.xiaomi
 
 # USB
+PRODUCT_HAS_GADGET_HAL := true
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti
 
