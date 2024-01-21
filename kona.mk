@@ -142,6 +142,7 @@ PRODUCT_PACKAGES += \
     libreverbwrapper \
     libsndmonitor \
     libspkrprot \
+    libtinycompress \
     libvisualizer \
     libvolumelistener \
     sound_trigger.primary.kona
