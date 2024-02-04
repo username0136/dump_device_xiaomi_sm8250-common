@@ -65,8 +65,6 @@ PRODUCT_COPY_FILES += \
 ifeq ($(TARGET_IS_VAB),true)
 # Inherit virtual_ab_ota product
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
-# Enable compression with xor
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression_with_xor.mk)
 
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti \

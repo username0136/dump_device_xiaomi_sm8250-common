@@ -39,7 +39,7 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a76
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
@@ -104,7 +104,7 @@ endif
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/framework_compatibility_matrix.xml \
     $(COMMON_PATH)/device_framework_matrix.xml \
-    vendor/aosp/config/device_framework_matrix.xml
+    vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += nfc
@@ -182,7 +182,9 @@ BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := $(ALL_PARTITIONS)
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # ( BOARD_SUPER_PARTITION_SIZE - 4MB )
 
 # Partitions - reserved size
-FRAMEWORK_PARTITIONS_RESERVED_SIZE := 30720000
+$(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
+    $(eval BOARD_$(p)IMAGE_EXTFS_INODE_COUNT := -1))
+FRAMEWORK_PARTITIONS_RESERVED_SIZE := 1258291200
 $(foreach p, $(call to-upper, $(SSI_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := $(FRAMEWORK_PARTITIONS_RESERVED_SIZE)))
 $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
