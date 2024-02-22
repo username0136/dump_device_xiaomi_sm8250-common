@@ -31,11 +31,11 @@ public class ClearSpeakerActivity extends CollapsingToolbarBaseActivity {
         super.onCreate(savedInstanceState);
 
 
-        Fragment fragment = getFragmentManager().findFragmentById(R.id.content_frame);
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.content_frame);
         ClearSpeakerFragment clearSpeakerFragment;
         if (fragment == null) {
             clearSpeakerFragment = new ClearSpeakerFragment();
-            getFragmentManager().beginTransaction()
+            getSupportFragmentManager().beginTransaction()
                     .add(R.id.content_frame, clearSpeakerFragment)
                     .commit();
         }
