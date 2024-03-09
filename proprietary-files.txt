@@ -733,7 +733,6 @@ vendor/bin/ssr_setup
 
 # Thermal
 vendor/bin/thermal_symlinks
-vendor/etc/init/pixel-thermal-symlinks.rc
 
 # Thermal engine
 vendor/bin/thermal-engine
