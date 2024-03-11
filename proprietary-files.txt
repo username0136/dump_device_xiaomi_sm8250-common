@@ -733,10 +733,7 @@ vendor/bin/ssr_setup
 
 # Thermal
 vendor/bin/thermal_symlinks
-
-# Thermal engine
-vendor/bin/thermal-engine
-vendor/etc/init/init_thermal-engine.rc
+vendor/etc/init/pixel-thermal-symlinks.rc
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 
