@@ -526,7 +526,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi
+    vendor.lineage.touch@1.0-service.xiaomi_kona
 
 # USB
 PRODUCT_HAS_GADGET_HAL := true

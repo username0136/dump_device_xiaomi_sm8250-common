@@ -99,7 +99,7 @@
 /data/vendor/thermal(/.*)?                                              u:object_r:thermal_data_file:s0
 
 # Touch
-/vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi              u:object_r:hal_lineage_touch_default_exec:s0
+/vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.xiaomi_kona         u:object_r:hal_lineage_touch_default_exec:s0
 
 # Touch Feature
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service                              u:object_r:hal_touchfeature_xiaomi_default_exec:s0
