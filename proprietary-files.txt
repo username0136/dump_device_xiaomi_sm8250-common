@@ -772,12 +772,7 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/bin/ssr_setup
 
 # Thermal
-vendor/bin/mi_thermald
-vendor/etc/init/init.mi_thermald.rc
-
-# Thermal engine
-vendor/bin/thermal-engine
-vendor/etc/init/init_thermal-engine.rc
+vendor/etc/thermal_info_config.json
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 
