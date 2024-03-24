@@ -22,7 +22,6 @@ import java.util.concurrent.Future;
 
 public class AutoHBMService extends Service {
     private static final String HBM = "/sys/class/drm/card0/card0-DSI-1/disp_param";
-    private static final String BACKLIGHT = "/sys/class/backlight/panel0-backlight/brightness";
 
     private static boolean mAutoHBMActive = false;
     private ExecutorService mExecutorService;
@@ -51,10 +50,8 @@ public class AutoHBMService extends Service {
     private void enableHBM(boolean enable) {
         if (enable) {
             FileUtils.writeLine(HBM, "0x10000");
-            FileUtils.writeLine(BACKLIGHT, "2047");
         } else {
             FileUtils.writeLine(HBM, "0xF0000");
-            FileUtils.writeLine(BACKLIGHT, "2047");
         }
 
     }
