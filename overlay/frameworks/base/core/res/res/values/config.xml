@@ -337,4 +337,7 @@
 
     <!-- Whether the new Auto Selection Network UI should be shown -->
     <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
+
+    <!-- Disable source pocket mode -->
+    <bool name="config_pocketModeSupported">false</bool>
 </resources>
