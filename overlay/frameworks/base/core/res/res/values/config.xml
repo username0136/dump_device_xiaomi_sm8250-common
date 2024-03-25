@@ -366,4 +366,7 @@
          manager will disable alpha trasformation in animations where not
          strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
+
+    <!-- Disable source pocket mode -->
+    <bool name="config_pocketModeSupported">false</bool>
 </resources>
