@@ -31,7 +31,7 @@ import android.os.Bundle;
 import android.util.Log;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 import android.app.ActionBar;
 import android.app.Activity;
 
@@ -40,7 +40,7 @@ public class PocketPreferenceFragment extends PreferenceFragment
     private static final String TAG = "PocketMode";
 
     public static final String BATTERY_POCKET_MODE = "b_pocketmode_sw_pref";
-    private SwitchPreference modeSwitch;
+    private SwitchPreferenceCompat modeSwitch;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -56,7 +56,7 @@ public class PocketPreferenceFragment extends PreferenceFragment
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.layout.pocket_setting);
-        modeSwitch = (SwitchPreference) findPreference(BATTERY_POCKET_MODE);
+        modeSwitch = (SwitchPreferenceCompat) findPreference(BATTERY_POCKET_MODE);
         modeSwitch.setOnPreferenceChangeListener(this);
     }
 

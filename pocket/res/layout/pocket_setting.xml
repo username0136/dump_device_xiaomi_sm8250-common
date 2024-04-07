@@ -29,7 +29,7 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/pocketmode_short_title">
 
-    <SwitchPreference
+    <SwitchPreferenceCompat
         android:key="b_pocketmode_sw_pref"
         android:title="@string/pocketmode_title" />
 
