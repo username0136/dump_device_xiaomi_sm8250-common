@@ -151,6 +151,7 @@ persist.vendor.btstack.enable.lpa=true
 
 # Camera
 persist.vendor.camera.perflock.enable=0
+vendor.display.enable_camera_smooth=1
 
 # Chipset
 ro.soc.manufacturer=QTI
