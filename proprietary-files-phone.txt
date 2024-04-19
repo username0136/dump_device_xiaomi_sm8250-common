@@ -25,7 +25,6 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 # GNSS configs
 vendor/etc/apdr.conf
 vendor/etc/flp.conf
-vendor/etc/gps.conf
 vendor/etc/sap.conf
 
 # Mlipay
