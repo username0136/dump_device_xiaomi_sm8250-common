@@ -11,6 +11,10 @@ persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
 # Disable Layer caching
 ro.surface_flinger.enable_layer_caching=false
 
+# Disable Skia tracing by default
+debug.hwui.skia_tracing_enabled=false
+debug.hwui.skia_use_perfetto_track_events=false
+
 # Display
 debug.gralloc.gfx_ubwc_disable=0
 debug.sf.enable_hwc_vds=1
