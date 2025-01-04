@@ -1,0 +1,2 @@
+# Allow devicesettings_app to write to HBM node
+rw_dir_file(devicesettings_app, vendor_sysfs_graphics)
